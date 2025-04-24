@@ -136,3 +136,40 @@
         .download-btn:hover {
         background: #ccc;
         }
+
+        .video-section {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #000;
+            color: #fff;
+            }
+            
+            .video-container {
+            position: relative;
+            max-width: 960px;
+            margin: 0 auto;
+            }
+            
+            .video-container video {
+            width: 100%;
+            border: 4px solid #fff;
+            border-radius: 10px;
+            display: block;
+            }
+            
+            .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 64px;
+            color: #fff;
+            cursor: pointer;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+            }
+            
+            .play-button:hover {
+            opacity: 1;
+            }
+            

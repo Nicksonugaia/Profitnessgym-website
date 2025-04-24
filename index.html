@@ -35,9 +35,37 @@
     <img src="images/IMG_5853.jpeg" alt="Gym photo 9" style="width: 30%; margin: 10px;" />
     </section>
 </main>
+<section class="video-section">
+    <h2>Experience Pro Fitness</h2>
+    <div class="video-container">
+    <video id="promoVideo" width="100%" controls play muted loop>
+    <source src="videos/vid_01.MP4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+    <div class="play-button" id="playButton">&#9658;</div>
+    </div>
+    </section>
 
 <footer>
 <p>&copy; 2025 Pro Fitness Gym | Lae, Papua New Guinea</p>
 </footer>
+<script>
+    const video = document.getElementById('promoVideo');
+    const playButton = document.getElementById('playButton');
+    
+    playButton.addEventListener('click', () => {
+    if (video.paused) {
+    video.play();
+    playButton.style.display = 'none';
+    }
+    });
+    
+    // Optional: Hide button if video is already playing (e.g., auto-play on page load)
+    window.addEventListener('load', () => {
+    if (!video.paused) {
+    playButton.style.display = 'none';
+    }
+    });
+    </script>
 </body>
 </html>
